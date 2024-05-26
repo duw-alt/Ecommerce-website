@@ -136,7 +136,7 @@ app.get('/blog/:id', (req, res) => {
   if (!blog) {
     res.status(404).send('Blog not found');
   } else {
-    res.json('pages/blogPost', { blog });
+    res.render('pages/blogPost', { blog });
   }
 });
 
