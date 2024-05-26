@@ -1,0 +1,41 @@
+$('.blog-sec-slider').owlCarousel({
+  margin:30,
+  responsiveClass:true,
+  responsive:{
+      0:{
+          items:1,
+          nav:true
+      },
+      576:{
+          items:2,
+          nav:false
+      },
+      992:{
+          items:3,
+          nav:true,
+      }
+  }
+})
+
+$('.product-slider').owlCarousel({
+  margin:20,
+  responsiveClass:true,
+  responsive:{
+      0:{
+          items:1,
+          nav:true
+      },
+      576:{
+          items:2,
+          nav:false
+      },
+      768:{
+        items:3,
+        nav:false
+    },
+    992:{
+          items:4,
+          nav:true,
+      }
+  }
+})

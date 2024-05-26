@@ -1,0 +1,56 @@
+<nav class="header d-flex align-items-center">
+  <div class="container page-width d-flex align-items-center justify-content-between">
+    <a href="/home" class="logo ms-3">
+      <img src="/images/logo-white.svg" class="logo-white">
+      <img src="/images/logo-black.svg" class="logo-black d-none">
+    </a>
+    <div class="navbar-links d-flex align-items-center d-none d-xl-block">
+      <ul class="d-flex flex-row gap-5 mb-0">
+        <li><a class="nav-link" href="/home">HOME</a></li>
+        <li><a class="nav-link" href="/shop">SHOP</a></li>
+        <li><a class="nav-link" href="/blog">BLOG</a></li>
+        <li><a class="nav-link" href="/about">ABOUT</a></li>
+        <li><a class="nav-link" href="/contact">CONTACT</a></li>
+      </ul>
+    </div>
+    <div class="navbar-icons d-flex gap-3 me-3">
+      <a class="nav-link" href="#"><i class="bi bi-search"></i></a>
+      <a class="nav-link" href="/login"><i class="bi bi-person-fill"></i></a>
+      <div class="cart-icon">
+        <a class="nav-link"><i class="bi bi-cart"></i></a>
+        <span class="cartItemCount"></span>
+      </div>
+    </div>
+  </div>
+  <div class="burger-wrap d-xl-none me-4">
+    <div class="burger"></div>
+  </div>
+  <div class="navbar-toggle bg-black">
+    <div class="close-icon d-flex justify-content-end">
+      <i class="bi bi-x"></i>
+    </div>
+    <ul>
+      <li><a href="/home">Home</a></li>
+      <li><a href="/shop">Shop</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ! shopping cart when clicking the icon in navbar -->
+<div class="cart-tab">
+  <div class="d-flex justify-content-between mb-3 align-items-center">
+    <h2 class="text-center">Shopping Cart:</h2>
+    <i class="bi bi-x close"></i>
+  </div>
+  <div class="cart-item-wrap">
+    <!-- ... -->
+  </div>
+  <div class="empty-cart-message mt-5" style="display: none;">Cart is empty...</div>
+  <div class="total d-flex justify-content-end">
+    <h5>Total:</h5>
+    <div class="total-price ms-2">$0</div>
+  </div>
+</div>

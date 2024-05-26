@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  background-color: black;
+}
+
+.back-to-top {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgb(196, 212, 224);
+  position: absolute;
+  z-index: 4;
+  right: 40px;
+  bottom: 30px;
+  position: fixed;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+  border: 3px solid white;
+}
+
+.owl-stage-outer { 
+  margin: -15px; 
+  padding: 15px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none !important;
+  cursor: pointer;
+  color: white !important;
+}
+
+.page-width {
+  margin: 0px auto;
+  max-width: 1230px;
+}
+
+.hidden {
+  display: none;
+}
+
+.shop-now-btn {
+  margin-top: 10px;
+  padding: 5px 16px;
+  background-color: transparent;
+  border: 1px solid white;
+  box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.2);
+  border-radius: 64px;
+  color: white;
+  font-size: 14px;
+  transition: all 0.25s;
+}
+.shop-now-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.add-to-cart-btn {
+  padding: 6px 12px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  transition: all 0.25s;
+}
+.add-to-cart-btn:hover {
+  background-color: rgba(0, 0, 255, 0.7);
+}
+
+.blog-btn {
+  border: none;
+  border-radius: 8px;
+  background-color: rgb(196, 212, 224);
+  padding: 8px 15px;
+  font-weight: 500;
+  transition: all 0.3s;
+  color: black !important;
+  height: 40px;
+}
+.blog-btn:hover {
+  background-color: rgb(217, 231, 241);
+}

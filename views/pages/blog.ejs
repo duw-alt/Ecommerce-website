@@ -1,0 +1,56 @@
+<section class="blog bg-white">
+  <div class="bg-img">
+    <h1>LATEST BLOGS</h1>
+  </div>
+  <div class="row page-width px-3 py-5">
+    <% blogs.slice(0, 2).forEach(blog => { %>
+      <div class="col-lg-4 col-md-6">
+        <div class="item mb-5">
+          <div class="img-wrap">
+            <div class="blog-date"><%= blog.date %></div>
+            <img src="<%= blog.image %>" class="blog-img img-fluid rounded">
+          </div>
+          <div class="info-wrap mb-4 p-1">
+            <h5 class="mt-3"><%= blog.title %></h5>
+            <p class="text-secondary"><%= blog.description %></p>
+            <a href="/blog/<%= blog.id %>">
+              <button class="blog-btn">Read Article</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    <% }) %>
+    <div class="col-lg-4 mt-5 mt-md-0">
+      <div class="item">
+        <% blogs.slice(2, 4).forEach(blog => { %>
+          <div class="info-wrap mb-4 p-1">
+            <h5><%= blog.title %></h5>
+            <p class="text-secondary mb-0"><%= blog.description %></p>
+            <a href="/blog/<%= blog.id %>">
+              <sub class="text-danger fw-bold">READ MORE</sub>
+            </a>
+          </div>
+        <% }) %>
+      </div>
+    </div>
+  </div>
+  <div class="row page-width py-4 px-3">
+    <% blogs.slice(4).forEach(blog => { %>
+      <div class="col-lg-3 col-md-6">
+        <div class="item mb-5">
+          <div class="img-wrap">
+            <div class="blog-date"><%= blog.date %></div>
+            <img src="<%= blog.image %>" class="blog-img img-fluid rounded">
+          </div>
+          <div class="info-wrap mb-4 p-1">
+            <h5 class="mt-3"><%= blog.title %></h5>
+            <p class="text-secondary"><%= blog.description %></p>
+            <a href="/blog/<%= blog.id %>">
+              <sub class="text-danger fw-bold">READ MORE</sub>
+            </a>
+          </div>
+        </div>
+      </div>
+    <% }) %>
+  </div>
+</section>

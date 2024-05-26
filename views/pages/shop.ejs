@@ -1,0 +1,24 @@
+<section class="shop py-5">
+  <div class="row text-center mb-3 me-0">
+    <h1>SHOP</h1>
+  </div>
+  <div class="row page-width px-3 ">
+    <% products.forEach(product => { %>
+      <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+        <div class="shop-product text-center shadow p-4 rounded">
+          <a href="/shop/product/<%= product.id %>">
+            <img src="<%= product.image %>" alt="<%= product.name %>" class="img-fluid product-image">
+          </a>
+          <a href="/shop/product/<%= product.id %>">
+            <h4 class="text-black product-title"><%= product.name %></h4>
+          </a>
+          <p><%= product.description %></p>
+          <p class="product-price">$<%= product.price %></p>
+          <button name="productId" value="<%= product.id %>" class="add-to-cart-btn w-100">Add to Cart</button>
+        </div>
+      </div>
+    <% }); %>
+  </div>
+</section>
+
+

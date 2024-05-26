@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Include head elements and links -->
+  <%- include('components/head') %>
+</head>
+<body>
+  <!--! Include Navbar except dashboard.ejs -->
+  <% if (!hideNavbar) { %>
+    <%- include('components/navbar') %>
+  <% } %>
+
+  <!--! Include Page Body -->
+  <%- body %>
+
+
+  <!--! Include Footer except dashboard.ejs-->
+  <% if (!hideFooter) { %>
+    <%- include('components/footer') %>
+  <% } %>
+  
+
+  <!--! Back to Top Arrow Icon except dashboard.ejs-->
+  <% if (!hideArrow) { %>
+    <a href="#">
+      <div class="back-to-top">
+        <i class="bi bi-arrow-up-short"></i>
+      </div>
+    </a>
+  <% } %>
+
+  <!-- Include Javascript Links -->
+  <%- include('components/scripts') %>
+</body>
+</html>
