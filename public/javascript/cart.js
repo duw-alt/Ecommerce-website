@@ -27,7 +27,7 @@ const renderCartItems = () => {
 
   cartData.forEach(item => {
     const cartItemHTML = `
-      <div class="cart-item">
+      <div class="cart-item py-3">
         <img src="${item.image}" class="cart-img img-fluid">
         <div class="details d-flex flex-column gap-1 ms-3">
           <div class="cart-item-title">${item.title}</div>
